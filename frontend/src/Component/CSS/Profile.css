@@ -1,0 +1,102 @@
+/* General styles for profile page */
+
+.profile{
+    background-image: url('../Assets/profileback.jpg'); /* Adjust the path if needed */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* To ensure it covers the full height*/
+    margin-top: 0px;
+   
+    
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center;  */
+    /* padding: 20px; */
+}
+    
+
+.profile-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: transparent;
+    
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
+
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+    
+  }
+  
+  .profile-form {
+    display: flex;
+    flex-direction: column;
+  
+    
+  }
+  
+  label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .profile-form-container input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    
+    background-image: url('../Assets/profileform.jpg');
+  }
+  .profile-form-container input:hover{
+    border: 2px solid #550323;
+
+  }
+  
+  .profile-form-container button {
+    padding: 10px 15px;
+    background-color: black;
+    color: #f65392;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 200px;
+    align-self: center;
+    
+    
+    
+  }
+  
+  .profile-form-container button:hover {
+    background-color: white;
+    color:#ab1d53 ;
+  }
+
+  .form-container{
+    margin-top: 40px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .profile-container {
+      padding: 10px;
+    }
+  
+    input {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+      
+  }
+}

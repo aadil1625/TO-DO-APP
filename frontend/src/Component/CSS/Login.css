@@ -1,0 +1,117 @@
+/* General styles for the signup container */
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f7;
+    background-image: url('../Assets/formbg.png');
+    padding: 20px;
+  }
+  
+  /* Form Section */
+  .signup-form {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0%;
+    max-width: 400px;
+    width: 100%;
+    
+  }
+  
+  .signup-form h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 0%;
+    color: #ab1d53;
+    text-align: center;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #ab1d53;
+  }
+  
+  .form-group input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 10%;
+  }
+  
+  .signup-button {
+    width: 30%;
+    background-color: black;
+    color: #ab1d53;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 35%;
+  }
+  
+  .signup-button:hover {
+    background-color: #ab1d53;
+    color: white;
+  }
+  
+  /* Link styling */
+  .signup-form p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .signup-form p a {
+    color: #ab1d53;
+    text-decoration: none;
+  }
+  
+  .signup-form p a:hover {
+    text-decoration: underline;
+  }
+
+  .login-para{
+    margin-right: 1%;
+    margin-bottom: 0%;
+  }
+
+  .sideimg{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0%;
+    height: 338px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .signup-form {
+      padding: 15px;
+    }
+  
+    .signup-form h2 {
+      font-size: 22px;
+    }
+  
+    .form-group input {
+      font-size: 14px;
+    }
+  
+    .signup-button {
+      font-size: 14px;
+    }
+  }
+  

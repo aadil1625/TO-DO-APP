@@ -1,0 +1,248 @@
+/* General body styling */
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main todo container */
+.todo {
+    background-image: url('../Assets/formbg.png');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Header */
+.todo h1 {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding-top: 20px;
+}
+
+/* Main wrapper for todo list */
+.todo-wrapper {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 80px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0px 5px 7px rgba(58, 57, 57, 0.7);
+    border-radius: 8px;
+}
+
+/* Input form */
+.todo-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.todo-input-item {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+   
+}
+
+.todo-input-item label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.todo-input-item input {
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    background-color: wheat;
+}
+
+.todo-input-item input:focus {
+    outline: 2px solid #ab1d53;
+}
+
+/* Button styling */
+.add-btn {
+    background-color: black;
+    color: #d73f79;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 50%;
+    margin-left: 25%;
+
+}
+
+.add-btn:hover {
+    background-color: white;
+    color: #ab1d53;
+    border: 1px solid #ab1d53;
+   
+}
+
+.sec-btn {
+    background-color: #ab1d53;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sec-btn:hover{
+    background-color: white;
+    color: #ab1d53;
+    border: 2px solid #ab1d53;
+}
+
+.active {
+    background-color: rgb(249, 196, 215);
+    color: #ab1d53;
+    border: 2px solid #ab1d53;
+}
+
+/* Button area for toggling todo and completed tasks */
+.btn-area {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+/* Todo list area */
+.todo-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-list-item {
+    background-color:#ab1d53;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.todo-list-item h1 {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+}
+
+.todo-list-item p {
+    font-size: 14px;
+    color: rgb(223, 221, 221);
+    margin-top: 5px;
+}
+
+/* Icon sizes and hover effects */
+.icon {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: black;
+}
+
+.check-icon {
+    font-size: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.check-icon:hover {
+    color: white;
+}
+
+/* Edit wrapper for editing todo items */
+.edit__wrapper {
+    background-color: #414040;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.edit__wrapper input, .edit__wrapper textarea {
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.edit__wrapper .add-btn {
+    margin: 10px auto;
+    font-size: 16px;
+}
+
+/* Media Queries for responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .todo-wrapper {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .add-btn, .sec-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .todo-list-item h1 {
+        font-size: 18px;
+    }
+
+    .icon, .check-icon {
+        font-size: 20px;
+    }
+
+    .edit__wrapper input, .edit__wrapper textarea {
+        font-size: 14px;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .todo-wrapper {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .add-btn, .sec-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .todo-list-item h1 {
+        font-size: 16px;
+    }
+
+    .icon, .check-icon {
+        font-size: 18px;
+    }
+
+    .edit__wrapper input, .edit__wrapper textarea {
+        font-size: 12px;
+    }
+}

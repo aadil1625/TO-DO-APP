@@ -1,0 +1,113 @@
+html, body {
+  height: 100%; /* Ensure that body takes full height of the viewport */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  overflow-y: auto; /* Enable vertical scroll */
+}
+
+.banner-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  min-height: 80vh; /* Ensure the banner takes up most of the viewport */
+  overflow-y: auto; /* Allow content inside to scroll if necessary */
+}
+
+.banner-content {
+  flex: 1; /* Take up space on the left */
+  padding-right: 20px; /* Add space between text and image */
+  color: #ab1d53;
+  /* overflow-y: auto; Enable internal scrolling */
+}
+
+.banner-content h1 {
+  color: black;
+ 
+}
+.banner-welcome{
+  color: black;
+  padding-right: 50px;
+ 
+}
+
+.banner-img {
+  flex: 1; /* Image will take space on the right */
+  display: flex;
+  justify-content: flex-end; /* Align the image to the right */
+}
+
+.banner-img img {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto;
+  max-height: 600px; /* Limit the image height if needed */
+}
+
+/* Basic button styles */
+button {
+  background-color: #070707;
+  color: #ab1d53;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #f7f5f5;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  color: #ab1d53;
+}
+
+button:active {
+  background-color: #fcf4f4;
+  transform: scale(0.98);
+  color: #ab1d53;
+}
+
+/* Ensure sections don't overlap */
+.features, .login, .service, .footer {
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner-container {
+      flex-direction: column; /* Stack content vertically on smaller screens */
+  }
+
+  .banner-content {
+      padding-right: 0;
+      text-align: center;
+  }
+
+  .banner-img {
+      justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-content h1 {
+      font-size: 24px;
+  }
+
+  .banner-content h2 {
+      font-size: 20px;
+  }
+
+  .banner-content p {
+      font-size: 16px;
+  }
+}

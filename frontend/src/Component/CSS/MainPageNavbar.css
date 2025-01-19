@@ -1,0 +1,101 @@
+/* General Styles for Navbar */
+.navbar {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 20px; /* Reduced padding to minimize navbar height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Logo and ToDo Title */
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 0px;
+}
+
+.logo-img {
+  height: 50px; /* Reduced size for logo */
+  width: 50px;  /* Reduced size for logo */
+  margin-right: 10px;
+}
+
+.logo-container h1 {
+  font-size: 24px; /* Adjusted font size for "ToDo" */
+  margin: 0; /* Remove extra margin */
+  color: black;
+}
+
+/* Navbar Content */
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: auto;
+}
+
+/* Profile Button Styles */
+.profile-button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 8px 12px; /* Adjusted padding to reduce size */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Reduced font size for the button */
+  margin-left: 20px;
+  text-align: center;
+}
+
+.profile-button:hover {
+  background-color: black;
+    color: #da2469;
+}
+
+/* Welcome Text */
+.welcome-text {
+  font-size: 18px; /* Adjusted font size */
+  color: black;
+  margin-right: 10px;
+ text-align: center;
+}
+.profile-button{
+  padding-right: 40px;
+}
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .logo-container h1 {
+    font-size: 20px;
+  }
+
+  .logo-img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .navbar-content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .profile-button {
+    font-size: 14px;
+    padding: 6px 10px;
+    text-align: center;
+   
+  }
+
+  .welcome-text {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
