@@ -6,39 +6,8 @@
   <meta name="description" content="To-Do App Project - A task management application built using React, Node.js, Express.js, and MySQL.">
   <meta name="author" content="Your Name">
   <title>To-Do App Project</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0 20px;
-      background-color: #f4f4f9;
-      color: #333;
-    }
-    h1, h2 {
-      color: #444;
-    }
-    pre {
-      background: #eee;
-      padding: 10px;
-      border-radius: 5px;
-      overflow-x: auto;
-    }
-    code {
-      font-family: "Courier New", Courier, monospace;
-      color: #d63384;
-    }
-    ul, ol {
-      margin-left: 20px;
-    }
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  
+     
 </head>
 <body>
   <h1>To-Do App</h1>
@@ -63,21 +32,7 @@
     <li><strong>Postman:</strong> For testing and debugging APIs during development.</li>
   </ul>
 
-  <h2>How to Run the Project</h2>
-  <ol>
-    <li>Clone the repository to your local machine:</li>
-    <pre><code>git clone https://github.com/yourusername/todo-app.git</code></pre>
-    <li>Navigate to the <code>frontend</code> folder and install dependencies:</li>
-    <pre><code>cd frontend
-npm install</code></pre>
-    <li>Navigate to the <code>backend</code> folder and install dependencies:</li>
-    <pre><code>cd ../backend
-npm install</code></pre>
-    <li>Start the back-end server:</li>
-    <pre><code>node server.js</code></pre>
-    <li>Start the front-end development server:</li>
-    <pre><code>npm start</code></pre>
-  </ol>
+  
 
   <h2>Project Purpose</h2>
   <p>
