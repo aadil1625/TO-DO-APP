@@ -38,9 +38,6 @@
     This project demonstrates the integration of front-end and back-end technologies to build a full-stack application. It serves as a great learning experience for developers exploring modern web development practices.
   </p>
 
-  <h2>License</h2>
-  <p>
-    This project is open-source and available under the <a href="LICENSE">MIT License</a>.
-  </p>
+  
 </body>
 </html>
