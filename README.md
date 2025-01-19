@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="To-Do App Project - A task management application built using React, Node.js, Express.js, and MySQL.">
   <meta name="author" content="Your Name">
-  <title>To-Do App Project</title>
   
      
 </head>
